@@ -90,6 +90,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
+# Runtime Resource Overlays 
+PRODUCT_PACKAGES += \
+    SettingsOverlayRMX3430 \
+    TetheringConfigOverlay \
+    WifiOverlay
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.even
