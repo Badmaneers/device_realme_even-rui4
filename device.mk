@@ -31,6 +31,10 @@ PRODUCT_SHIPPING_API_LEVEL := 30
 # Extra VNDK Versions
 PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
+# Disable APEX compression
+# Keep this after including updatable_apex.mk
+PRODUCT_COMPRESSED_APEX := false
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
@@ -117,6 +121,31 @@ PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.even
 
+# DRM
+PRODUCT_PACKAGES += \
+    libdrm
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
+
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
+    Tag
+
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v32 \
+    libcrypto-v32
+
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhardware \
+    libhardware.vendor \
+    libhwbinder \
+    libhwbinder.vendor
