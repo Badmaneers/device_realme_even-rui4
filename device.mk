@@ -109,7 +109,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Runtime Resource Overlays 
 PRODUCT_PACKAGES += \
-    SettingsOverlayRMX3430 \
+    SettingsOverlayeven \
     TetheringConfigOverlay \
     WifiOverlay
 
