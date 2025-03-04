@@ -14,6 +14,9 @@ $(call inherit-product, device/realme/even/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 720
+
 PRODUCT_NAME := lineage_even
 PRODUCT_DEVICE := even
 PRODUCT_MANUFACTURER := Realme
