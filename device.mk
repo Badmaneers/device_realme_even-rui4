@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
 
+# System prop
+-include $(DEVICE_PATH)/system_prop.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.even
