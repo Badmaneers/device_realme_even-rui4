@@ -39,6 +39,11 @@ PRODUCT_COMPRESSED_APEX := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
+# RRO-Overlays
+PRODUCT_PACKAGES += \
+    TetheringConfigOverlay \
+    WifiOverlay
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
