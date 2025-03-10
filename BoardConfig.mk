@@ -125,6 +125,10 @@ TARGET_HAS_FUSEBLK_SEPOLICY_ON_VENDOR := true
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS := $(DEVICE_PATH)/sepolicy/private
 SELINUX_IGNORE_NEVERALLOWS=true
 
+
+# Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/oplus_chg/battery/mmi_charging_enable
+
 # Vendor Overlay
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 

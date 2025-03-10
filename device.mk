@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
     TetheringConfigOverlay \
     WifiOverlay
 
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+
 # System prop
 -include $(DEVICE_PATH)/system_prop.mk
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
