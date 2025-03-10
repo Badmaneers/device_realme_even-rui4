@@ -35,6 +35,10 @@ PRODUCT_EXTRA_VNDK_VERSIONS := 31
 # Keep this after including updatable_apex.mk
 PRODUCT_COMPRESSED_APEX := false
 
+# Dynamic Partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_BUILD_SUPER_PARTITION := false
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
