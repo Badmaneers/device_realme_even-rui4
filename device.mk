@@ -162,3 +162,7 @@ PRODUCT_PACKAGES += \
     libhardware.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# DRM
+PRODUCT_PACKAGES += \
+    libdrm
